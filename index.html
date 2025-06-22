@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>1x9bet - Login</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>1x9bet - Entrar</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Bem-vindo à <span>1x9bet</span></h1>
+  <h1>Bem-vindo à <span style="color: yellow">1x9bet</span></h1>
+  
+  <div class="login-box">
+    <input id="email" type="email" placeholder="E-mail" />
+    <input id="senha" type="password" placeholder="Senha" />
+    <button id="loginBtn">Entrar</button>
+    <button id="registerBtn">Registrar</button>
+  </div>
 
-    <div class="auth-box">
-      <input type="email" id="email" placeholder="E-mail" />
-      <input type="password" id="password" placeholder="Senha" />
-
-      <button onclick="login()">Login</button>
-      <button onclick="register()">Registrar</button>
-
-      <p id="message"></p>
+  <!-- Modal de erro -->
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <p id="modal-text"></p>
+      <button onclick="closeModal()">Fechar</button>
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script type="module" src="main.js"></script>
+  <script type="module" src="Login.js"></script>
 </body>
 </html>
